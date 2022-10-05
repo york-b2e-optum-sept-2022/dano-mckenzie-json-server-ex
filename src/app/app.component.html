@@ -1,0 +1,17 @@
+{{users | json}}
+
+<div>
+  <input [(ngModel)]="nameInput">
+  <button (click)="createUser()">Submit</button>
+</div>
+
+<div>
+  <input [(ngModel)]="userIdInput" type="number">
+  <button (click)="deleteUser()">Delete</button>
+</div>
+
+<div>
+  <input [(ngModel)]="updateUserInputId" type="number">
+  <input [(ngModel)]="updateUserInputName">
+  <button (click)="updateUser()">Update</button>
+</div>
